@@ -13,4 +13,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Print text from file.txt
-      run: cat hellomex.html
+      run: cat hellome.html
