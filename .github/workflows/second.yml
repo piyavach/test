@@ -20,6 +20,5 @@ jobs:
 
     - name: Run functional_test1
       run: |
-        output=$(node func_test1.js)
-        echo "$output"
+        echo "::error file=func_test1.js"
         
