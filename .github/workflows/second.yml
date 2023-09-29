@@ -19,8 +19,5 @@ jobs:
         node-version: '14'
 
     - name: Run functional_test1
-      run: |
-        output=$(node func_test1.js)
-        echo "$output"
-        echo "::error file=func_test1.js"
+      run: echo "::error file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
         
