@@ -19,5 +19,7 @@ jobs:
         node-version: '14'
 
     - name: Run functional_test1
-      run: echo "::error file=app.js"
+      run: |
+        output=$(node func_test1.js)
+        echo "$output"
         
